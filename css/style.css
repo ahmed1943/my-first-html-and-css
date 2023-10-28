@@ -408,7 +408,7 @@
 }
 
 
-
+/* 
 
 .hover_contaner{
     width: 80%;
@@ -487,8 +487,100 @@
     font-size: 24px;
     margin: 0 0 10px;
 }
+ */
 
 
+ .hover_contaner{
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 150px auto;
+    /* background: #000; */
+
+}
+
+.hover_contaner .all_box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc( 300px - 30px);
+    background-color: #464444;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+}
+
+.hover_contaner .all_box .icon{
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #eee;
+     transition: 0.5s;
+    z-index: 1;
+}
+
+.hover_contaner .all_box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px)  ;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.hover_contaner .all_box .icon .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.hover_contaner .all_box .icon .fas{
+    font-size: 40px;
+}
+
+
+.hover_contaner .all_box .dattels_box{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.hover_contaner .all_box:hover .dattels_box{
+    top: 100px;
+}
+
+
+.hover_contaner .all_box .dattels_box h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.hover_contaner .all_box .dattels_box p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+
+}
+
+
+
+
+
+
+ /* end hover */
 .container_blog{
     width: 80%;
     height: 500px;
